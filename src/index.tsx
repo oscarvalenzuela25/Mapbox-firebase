@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import MapsApp from './MapsApp';
 
+console.log(process.env.REACT_APP_ENVIROMENT);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
