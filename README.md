@@ -33,3 +33,10 @@ Este es un pequeño proyecto de prueba hecho con mapbox
 - Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
 - Se guardo tambien la api key de mapbox en vercel para los test de busqueda
 
+#### Render (Igual a vercel pero con deploy a servicios webs)
+- Url https://front-mapbox-firebase-app.onrender.com/
+- Tiene un panel para configurar .env facilmente
+- Deploy de estaticos + .envs facilmente
+- Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
+- Se guardo tambien la api key de mapbox en vercel para los test de busqueda
+
