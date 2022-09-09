@@ -8,25 +8,28 @@ Este es un pequeño proyecto de prueba hecho con mapbox
 - Los .env de keys externas y variables de entorno se utilizo FireBase con Realtime Database, alli administra las keys del proyecto.
 
 ### Probando deploys
+- Para los hostings que no podemos utilizar .envs en su entorno, se instalo firebase y para traernos datos sensibles ocupamos realtime database como gestor de keys.
+- Recuerda, cuando haces un build este te toma el .env.production y por defecto en desarrollo toma el .env.development
+
 #### Firebase (front app)
 - Url https://maps-app-f3c08.web.app/ 
 - No tiene para configurar .env facilmente
 - Deploy de estaticos por excelencia, se ocupo env-cmd para mandar los .env de prod `"build:prod": "env-cmd -f .env.production npm run build"`
 - No tiene un panel para configurar .env asique todo es por codigo
-- Se guardo la api key de mapbox en realtime storage
+- Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
 - Falta poner la apikey de mapbox en las busquedas, esto es solo de prueba.
 
 #### Netlify (front app) (Gratis la subida de estaticos, el uso de .env en consola es pagado)
 - Url https://melodious-pothos-2f5de9.netlify.app/
 - Tiene un panel para configurar .env facilmente (Pagado)
 - Deploy de estaticos (Gratis) + .envs facilmente (Pagado)
-- Se guardo la api key de mapbox en realtime storage pero se puede utilizar en el .env 
-- Se guardo tambien la api key de mapbox en vercel para los test de busqueda (Pagado)
+- Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
+- Se guardo tambien la api key de mapbox en vercel para los test de busqueda, pero no se puede utilizar por ser de pago (Pagado)
 
-#### Vercel (El mejor front app)
+#### Vercel (El mejor front app + .envs)
 - Url https://front-mapbox-firebase-app.vercel.app/
 - Tiene un panel para configurar .env facilmente
 - Deploy de estaticos + .envs facilmente
-- Se guardo la api key de mapbox en realtime storage pero se puede utilizar en el .env 
+- Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
 - Se guardo tambien la api key de mapbox en vercel para los test de busqueda
 
