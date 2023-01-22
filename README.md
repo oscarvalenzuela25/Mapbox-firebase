@@ -21,8 +21,8 @@ Este es un pequeño proyecto de prueba hecho con mapbox
 
 #### Netlify (front app) (Gratis la subida de estaticos, el uso de .env en consola es pagado)
 - Url https://melodious-pothos-2f5de9.netlify.app/
-- Tiene un panel para configurar .env facilmente (Pagado)
-- Deploy de estaticos (Gratis) + .envs facilmente (Pagado)
+- Tiene un panel para configurar .env facilmente
+- Deploy de estaticos (Gratis) + .envs facilmente
 - Se guardo la api key de mapbox en realtime storage para simular un entorno de guardado de keys
 - Se guardo tambien la api key de mapbox en vercel para los test de busqueda, pero no se puede utilizar por ser de pago (Pagado)
 
